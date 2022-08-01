@@ -1,0 +1,357 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+	list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+	margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+html {
+	background-color: #E5E5E5;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+	max-width: 1194px;
+	margin: 0 auto;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	padding: 23.5px 0;
+}
+
+.navbar__logo {}
+
+.nav__tools {
+	display: flex;
+
+}
+
+.nav__tools a {
+	font-size: 16px;
+	font-weight: 600;
+	color: #232730;
+	padding: 9.5px 24px;
+}
+
+.nav__tools li:hover {
+	color: #A55C30;
+	transition: 0.2s;
+}
+
+.nav__tools a:last-child {
+	padding-right: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header__body {
+	padding: 113px 0;
+	display: flex;
+}
+
+.header__h1 {
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 81.92px;
+	width: 460px;
+	padding-left: 40px;
+	border-left: 9px solid #F8D7A4;
+	height: 200px;
+	z-index: 2;
+
+}
+
+.header__car {
+	margin-left: 100px;
+	right: 300px;
+}
+
+.about__section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 130px;
+}
+
+.about__text-content {
+	width: 481px;
+}
+
+.h2-brown {
+	color: #A55C30;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 51.2px;
+}
+
+.h2-brown-center {
+	text-align: center;
+	padding-top: 107px;
+}
+
+.p__text {
+	color: #232730;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 23.2px;
+	text-align: justify;
+}
+
+.services__section {
+	background: url(../images/main/bg__car.png) no-repeat;
+	background-position: center;
+	background-color: #000000;
+}
+
+.services__body {
+	max-width: 1194px;
+	margin: auto;
+
+}
+
+.services__contents {
+	display: flex;
+	justify-content: space-between;
+}
+
+.services__content {
+	max-width: 303px;
+	padding: 70px 0 96px 0;
+}
+
+.services__img {
+	margin: auto;
+	padding-bottom: 56px;
+}
+
+.services__h3 {
+	color: #FFFFFF;
+	text-align: center;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+.p__text-white {
+	color: #FFFFFF;
+}
+
+.stats__section {
+	background-color: #232222;
+}
+
+.stats__body {
+	max-width: 1194px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	padding: 88px 0;
+}
+
+.stats__group {}
+
+.stats__number {
+	font-size: 72px;
+	font-weight: 600;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.stats__text {
+	text-align: center;
+	font-size: 24px;
+}
+
+.testimonials__section {
+	background-color: #F8D7A4;
+	height: 720px;
+}
+
+.testimonials__body {
+	max-width: 1194px;
+	margin: auto;
+
+}
+
+.review {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #FFFFFF;
+	padding: 72px 0 87px;
+	margin-top: 61px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.review__info {
+	text-align: center;
+}
+
+.info-name {
+	padding-top: 33px;
+	color: #272727;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.info-city {
+	color: #979797;
+	font-size: 24px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.review__text {
+	text-align: center;
+	max-width: 601px;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 400;
+	color: #272727;
+}
+
+.review__grade {}
+
+
+.booking__section {
+	background: url(../images/main/bg__car.png) no-repeat;
+	background-position: center;
+	background-color: #000000;
+	color: #FFFFFF;
+	text-align: center;
+
+}
+
+.booking__body {
+
+	background: rgba(0, 0, 0, );
+	padding: 81px 0 96px;
+}
+
+.booking__text {
+	font-size: 32px;
+}
+
+.booking__phone {
+	font-size: 56px;
+	font-weight: 600;
+}
+
+.contact__section {
+	padding-bottom: 97px;
+}
+
+.h2-contact {
+	padding-bottom: 86px;
+}
+
+.contact__form {
+	background-color: #E8EAEC;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 727px;
+	margin: auto;
+	padding: 116px 0 79px;
+}
+
+.contact__input {
+	width: 439px;
+	height: 54px;
+	padding-left: 37px;
+	color: #9F9F9F;
+	font-size: 16px;
+	border: 1px solid #D2D2D2;
+	outline: none;
+	margin: 11px 0;
+}
+
+.contact__comment {
+	min-height: 204px;
+	padding-top: 30px;
+}
+
+.contact__submit {
+	width: 245px;
+	height: 60px;
+	background-color: #A55C30;
+	color: #FFFFFF;
+	border: none;
+	cursor: pointer;
+	margin-top: 11px;
+}
