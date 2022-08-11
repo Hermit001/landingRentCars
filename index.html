@@ -16,21 +16,22 @@
 	<div class="container">
 		<header>
 			<div class="navigation">
-				<img src="images/main/luxChaffeur.svg" alt="" class="navbar__logo">
+				<a href=""><img src="images/main/luxChaffeur.svg" alt="" class="navbar__logo"></a>
+
 				<ul class="nav__tools">
-					<a href="">
+					<a class="menu__item" href="">
 						<li>Home</li>
 					</a>
-					<a href="">
+					<a class="menu__item" href="">
 						<li>About</li>
 					</a>
-					<a href="">
+					<a class="menu__item" href="">
 						<li>Services</li>
 					</a>
-					<a href="">
+					<a class="menu__item" href="">
 						<li>Fleet</li>
 					</a>
-					<a href="">
+					<a class="menu__item" href="">
 						<li>Contact us</li>
 					</a>
 				</ul>
@@ -62,7 +63,7 @@
 			<h2 class="h2-brown h2-brown-center">Services</h2>
 			<div class="services__contents">
 				<div class="services__content">
-					<img src="images/main/services-star.svg" alt="" class="services__img">
+					<img src="images/main/services-star.svg" alt="" class="services__img services__img-first">
 					<h3 class="services__h3">Lorem ipsum dolor sit amet</h3>
 					<p class="p__text p__text-white">Consectetur adipiscing elit. Interdum parturient laoreet nibh vitae in
 						duis eu vel. Sagittis eget volutpat ac quisque tristique scelerisque proin.<br><br> Vel nec ac
@@ -76,13 +77,112 @@
 						ultrices mi viverra viverra. Mi, arcu sem nec risus cursus ipsum leo. Eget erat tincidunt ri</p>
 				</div>
 				<div class="services__content">
-					<img src="images/main/services-diamond.svg" alt="" class="services__img">
+					<img src="images/main/services-diamond.svg" alt="" class="services__img services__img-last">
 					<h3 class="services__h3">Lorem ipsum dolor sit amet</h3>
 					<p class="p__text p__text-white">Consectetur adipiscing elit. Interdum parturient laoreet nibh vitae in
 						duis eu vel. Sagittis eget volutpat ac quisque tristique scelerisque proin.<br><br> Vel nec ac
 						ultrices mi viverra viverra. Mi, arcu sem nec risus cursus ipsum leo. Eget erat tincidunt ri</p>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="carousel__section">
+		<h2 class="h2-brown h2-brown-center">Fleet</h2>
+		<div id="carousel" class="carousel">
+			<button class="arrow prev"></button>
+			<div class="gallery">
+				<ul>
+					<li><img src="images/main/carousel__firstClass.png">
+						<h3>FIRST CLASS</h3>
+						<p class="card__marc">Mercedes maybach s600</p>
+						<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut eu
+							tellus cursus faucibus duis hendrerit volutpat neque. Eget integer a amet iaculis. Nullam elit a
+						</p>
+						<div class="footer__card">
+							<p class="seats">4 Seats</p>
+							<p class="laggage">2 Luggage</p>
+						</div>
+					</li>
+					<li><img src="images/main/carousel__gWagon.png">
+						<h3 carousel__h3>BUSINESS CLASS</h3>
+						<p class="card__marc">Mercedes G - wagon</p>
+						<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut eu
+							tellus cursus faucibus duis hendrerit volutpat neque. Eget integer a amet iaculis. Nullam elit a
+						</p>
+						<div class="footer__card">
+							<p class="seats">4 Seats</p>
+							<p class="laggage">2 Luggage</p>
+						</div>
+					</li>
+					<li><img src="images/main/carousel__suv.png" class="carousel__suv">
+						<h3 carousel__h3>SUV</h3>
+						<p class="card__marc">Mercedes M class </p>
+						<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut eu
+							tellus cursus faucibus duis hendrerit volutpat neque. Eget integer a amet iaculis. Nullam elit a
+						</p>
+						<div class="footer__card">
+							<p class="seats">4 Seats</p>
+							<p class="laggage">2 Luggage</p>
+						</div>
+					</li>
+					<li><img src="images/main/carousel__firstClass.png">
+						<h3>FIRST CLASS</h3>
+						<p class="card__marc">Mercedes maybach s600</p>
+						<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut eu
+							tellus cursus faucibus duis hendrerit volutpat neque. Eget integer a amet iaculis. Nullam elit a
+						</p>
+						<div class="footer__card">
+							<p class="seats">4 Seats</p>
+							<p class="laggage">2 Luggage</p>
+						</div>
+					</li>
+					<li><img src="images/main/carousel__gWagon.png">
+						<h3 carousel__h3>BUSINESS CLASS</h3>
+						<p class="card__marc">Mercedes G - wagon</p>
+						<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut eu
+							tellus cursus faucibus duis hendrerit volutpat neque. Eget integer a amet iaculis. Nullam elit a
+						</p>
+						<div class="footer__card">
+							<p class="seats">4 Seats</p>
+							<p class="laggage">2 Luggage</p>
+						</div>
+					</li>
+					<li><img src="images/main/carousel__suv.png" class="carousel__suv">
+						<h3 carousel__h3>SUV</h3>
+						<p class="card__marc">Mercedes M class </p>
+						<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut eu
+							tellus cursus faucibus duis hendrerit volutpat neque. Eget integer a amet iaculis. Nullam elit a
+						</p>
+						<div class="footer__card">
+							<p class="seats">4 Seats</p>
+							<p class="laggage">2 Luggage</p>
+						</div>
+					</li>
+					<li><img src="images/main/carousel__suv.png" class="carousel__suv">
+						<h3 carousel__h3>SUV</h3>
+						<p class="card__marc">Mercedes M class </p>
+						<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut eu
+							tellus cursus faucibus duis hendrerit volutpat neque. Eget integer a amet iaculis. Nullam elit a
+						</p>
+						<div class="footer__card">
+							<p class="seats">4 Seats</p>
+							<p class="laggage">2 Luggage</p>
+						</div>
+					</li>
+					<li><img src="images/main/carousel__suv.png" class="carousel__suv">
+						<h3 carousel__h3>SUV</h3>
+						<p class="card__marc">Mercedes M class </p>
+						<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut eu
+							tellus cursus faucibus duis hendrerit volutpat neque. Eget integer a amet iaculis. Nullam elit a
+						</p>
+						<div class="footer__card">
+							<p class="seats">4 Seats</p>
+							<p class="laggage">2 Luggage</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<button class="arrow next"></button>
 		</div>
 	</div>
 	<div class="stats__section">
@@ -164,9 +264,9 @@
 					<input type="submit" class="contact__submit footer__contact__submit" value="Subscribe">
 				</div>
 				<div class="media__section">
-					<img src="images/main/facebook.svg" alt="">
-					<img src="images/main/twitter.svg" alt="">
-					<img src="images/main/instagram.svg" alt="">
+					<a href=""><img src="images/main/facebook.svg" alt=""></a>
+					<a href=""><img src="images/main/twitter.svg" alt=""></a>
+					<a href=""><img src="images/main/instagram.svg" alt=""></a>
 				</div>
 			</div>
 			<div class="footer__section footer__contact">
@@ -182,7 +282,8 @@
 			<p>© Copyright 2020 · LuxChauffeur All rights reserved </p>
 		</div>
 	</footer>
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
